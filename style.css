@@ -10,6 +10,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
+    position: relative;
+    height: 0;
 }
 
 .img-anchor {
@@ -22,19 +25,24 @@ body {
     top: -125px;
     left: -400px;
     opacity: 0.8;
-
 }
 
 .imgpos1:hover {
     opacity: 1;
 }
 
-.reminder {
-    background-color: #ff00006c;
-    display: inline-block;
-    font-family: sans-serif;
-    cursor: default;
-    text-wrap: wrap;
+#topten {
+    border: 3px solid rgba(151, 33, 33, 1);
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: hsla(28, 100%, 50%, 1);
+    background-color: black;
+    border-radius: 4px;
+    margin-top: 30px;
 }
 
 .h1 {
@@ -115,26 +123,6 @@ h2:hover {
 }
 
 .adr1 {font-size:26px;}
-
-.tuffp {
-    position: relative;
-    display: inline-block;
-    margin-top: 1px;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 24.6px;
-    border: 3px rgb(141, 0, 0) solid;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.tuffp:hover {
-    color: rgb(255, 56, 20);
-    font-size: 24.6px;
-    border: 3px #ffffff solid;
-    padding: 10px;
-    border-radius: 20px;
-}
 
 #p {
     font-size: 14px;
