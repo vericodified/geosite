@@ -1,29 +1,35 @@
 body {
-     color: white;
-     background-color: rgb(201, 105, 15); 
-     background-image: url("demonlistbackground.jpg");
-     background-attachment: fixed;
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
-     text-align: center;
-     font-family: Sofia, sans-serif;
-     cursor: default;
+    color: white;
+    background-color: rgb(201, 105, 15); 
+    background-image: url("demonlistbackground.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-family: Sofia, sans-serif;
+    cursor: default;
 }
 
 /*home button*/
 
 .home {
     color: rgb(37, 101, 153);
-     border: 4px solid rgb(53, 122, 74);
-     text-decoration: none;
-     display: inline-block; 
-     padding: 10px 15.5px 10px 15.5px;
-     border-radius: 14px;
-     text-shadow: 0px 0px 50px rgb(37, 101, 153);
-     position: fixed;
-     top: 0;
-     left: 0;
+    border: 4px solid rgb(53, 122, 74);
+    text-decoration: none;
+    display: inline-block; 
+    padding: 10px 15.5px 10px 15.5px;
+    border-radius: 14px;
+    text-shadow: 0px 0px 50px rgb(37, 101, 153);
+    transition: box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.home:hover {
+    box-shadow: -1px 1px 30px 1px;
+    color: rgb(53, 122, 74);
 }
 
 /* table configs */
@@ -37,6 +43,7 @@ table, td {
     margin: auto;
     font-size: 30px;
     position: relative;
+    transition: transform 0.2s ease-in-out;
 }
 
 th{
@@ -50,140 +57,14 @@ th{
     position: relative;
 }
 
-/* text effects */
-
-/***Thinking space II***/
-
-a#one {
-    color: white;
-    text-decoration: none;
-    text-shadow: 3px 3px 3px black;
-}
-
-a#one:hover {
-    color: black;
-    text-shadow: 3px 3px 3px white;
-}
-
-/***Flamewall***/
-
-a#two {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-shadow: 3px 3px 3px #D83829;
-}
-
-a#two:hover {
-    color: #D83829;
-    text-shadow: 3px 3px 3px black;
-}
-
-/***Amethyst***/
-
-a#three {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-shadow: 3px 3px 3px #310A85;
-}
-
-a#three:hover {
-    color: #310A85;
-    text-shadow: 3px 3px 3px white;
-
-}
-
-/***Tidal Wave***/
-
-a#four {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-shadow: 3px 3px 3px rgb(0, 183, 255);
-}
-
-a#four:hover {
-    color:rgb(0, 183, 255);
-    text-shadow: 3px 3px 3px rgb(255, 255, 255);
-}
-
-/***ORBIT***/
-
-a#five {
-    color: #88fff6;
-    text-decoration: none;
-    text-shadow: 3px 3px 3px #62ff65;
-}
-
-a#five:hover {
-    color: #62ff65;
-    text-shadow: 3px 3px 3px #88fff6;
-}
-
-/***Nullscapes***/
-
-a#six {
-    color: black;
-    text-decoration: none;
-    text-shadow: 3px 3px 3px white;
-}
-
-a#six:hover {
-    color: white;
-    text-shadow: 3px 3px 3px  black;
-}
-
-/***Quanteuse Processing***/
-
-a#seven {
-    color: white;
-    text-decoration: none;
-    text-shadow: 3px 3px 3px #E5209E;
-}
-
-a#seven:hover {
-    color: #E5209E;
-    text-shadow: 3px 3px 3px white;
-}
-
-/***BOOBAWAMBA***/
-
-a#eight {
-    color: green;
-    text-decoration: none;
-    text-shadow: 3px 3px 3px black;
-}
-
-a#eight:hover {
-    color: black;
-    text-shadow: 3px 3px 3px green;
-}
-
-/***Every End***/
-
-a#nine {
-    color: #027BF4;
-    text-decoration: none;
-    text-shadow: 3px 3px 3px #2D2731;
-}
-
-a#nine:hover {
-    color: #2D2731;
-    text-shadow: 3px 3px 3px #027BF4;
-}
-
-/***penumbral***/
-
-a#ten {
-    color: darkorange;
-    text-decoration: none;
-    text-shadow: 3px 3px 3px dimgray;
-}
-
-a#ten:hover {
-    color: dimgray;
-    text-shadow: 3px 3px 3px darkorange;
-}
-
 /* background images */
+
+/***Universal Scale***/
+
+td#one:hover, td#two:hover, td#three:hover, td#four:hover, td#five:hover, td#six:hover, td#seven:hover, td#eight:hover, td#nine:hover, td#ten:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
 
 /***Thinking Space II***/
 
@@ -191,6 +72,7 @@ td#one {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ts2.jpg");
     background-size: cover;
     background-position: center;
+    transition: transform 0.2s ease-in-out;
 }
 
 /***Flamewall***/
@@ -199,6 +81,7 @@ td#two {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("flamewall.png");
     background-size: cover;
     background-position: center;
+    transition: transform 0.2s ease-in-out;
 }
 
 /***Amethyst***/
@@ -266,6 +149,151 @@ td#ten {
     background-position: center;
 }
 
+
+
+
+
+
+
+
+/* text effects */
+
+/**universal transition**/
+
+a {
+    transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+}
+
+/***Thinking space II***/
+
+a#one {
+    color: white;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px black;
+}
+
+td#one:hover a#one {
+    color: black;
+    text-shadow: 3px 3px 3px white;
+}
+
+/***Flamewall***/
+
+a#two {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-shadow: 3px 3px 3px #D83829;
+}
+
+td#two:hover a#two {
+    color: #D83829;
+    text-shadow: 3px 3px 3px black;
+}
+
+/***Amethyst***/
+
+a#three {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 3px 3px 3px #310A85;
+}
+
+td#three:hover a#three {
+    color: #310A85;
+    text-shadow: 3px 3px 3px white;
+}
+
+/***Tidal Wave***/
+
+a#four {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 3px 3px 3px rgb(0, 183, 255);
+}
+
+td#four:hover a#four {
+    color:rgb(0, 183, 255);
+    text-shadow: 3px 3px 3px rgb(255, 255, 255);
+}
+
+/***ORBIT***/
+
+a#five {
+    color: #88fff6;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px #62ff65;
+}
+
+td#five:hover a#five {
+    color: #62ff65;
+    text-shadow: 3px 3px 3px #88fff6;
+}
+
+/***Nullscapes***/
+
+a#six {
+    color: black;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px white;
+}
+
+td#six:hover a#six {
+    color: white;
+    text-shadow: 3px 3px 3px  black;
+}
+
+/***Quanteuse Processing***/
+
+a#seven {
+    color: white;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px #E5209E;
+}
+
+td#seven:hover a#seven {
+    color: #E5209E;
+    text-shadow: 3px 3px 3px white;
+}
+
+/***BOOBAWAMBA***/
+
+a#eight {
+    color: green;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px black;
+}
+
+td#eight:hover a#eight {
+    color: black;
+    text-shadow: 3px 3px 3px green;
+}
+
+/***Every End***/
+
+a#nine {
+    color: #027BF4;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px #2D2731;
+}
+
+td#nine:hover a#nine {
+    color: #2D2731;
+    text-shadow: 3px 3px 3px #027BF4;
+}
+
+/***Penumbral***/
+
+a#ten {
+    color: darkorange;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px dimgray;
+}
+
+td#ten:hover a#ten {
+    color: dimgray;
+    text-shadow: 3px 3px 3px darkorange;
+}
+
 /*reserved custom id for orbit*/
 
 span#o {color: #D1C65D;}
@@ -273,5 +301,48 @@ span#r {color: #45D4CB}
 span#b {color: #CC5CCC;}
 span#i {color: #CE3B17;}
 span#t {color: #5BCD56;}
+
+.mobile-warning-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 120vh;
+            background-color: #121212; /* Dark background */
+            color: #ffffff;            /* White text */
+            
+            /* Center the text perfectly */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            /* Typography */
+            font-family: sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            
+            /* Layer it above everything else */
+            z-index: 9999; 
+            
+            /* Run the 'hideOverlay' animation for 4 seconds */
+            animation: hideOverlay 2s forwards;
+        }
+
+        /* The 4-Second Animation */
+        @keyframes hideOverlay {
+            0% {
+                opacity: 1;
+                visibility: visible;
+            }
+            90% {
+                opacity: 1; /* Keep it solid until near the end */
+            }
+            100% {
+                opacity: 0;
+                visibility: hidden; /* Removes it so you can click the page underneath */
+            }
+        }
 
 /*end*/

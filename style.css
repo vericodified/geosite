@@ -25,6 +25,7 @@ body {
     top: -125px;
     left: -400px;
     opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .imgpos1:hover {
@@ -43,6 +44,12 @@ body {
     background-color: black;
     border-radius: 4px;
     margin-top: 30px;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+#topten:hover {
+    background-color: rgb(114, 114, 114);
 }
 
 .h1 {
@@ -64,6 +71,7 @@ h2 {
     font-size: 20px;
     cursor: default;
     display: flex;
+    transition: color 0.3s ease-in-out;
 }
 
 h2:hover {
@@ -94,6 +102,7 @@ h2:hover {
     display: inline-block; 
     padding: 10px;
     border-radius: 15px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 .a1:hover {
@@ -111,6 +120,9 @@ h2:hover {
     padding: 8px;
     border-radius: 14px;
     text-shadow: 2px 2px 6px rgba(157, 255, 0, 0.685);
+    box-shadow: 0px 2px 20px 1px green;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-left: 3px;
 }
 
 .a2:hover {
@@ -120,11 +132,61 @@ h2:hover {
     display: inline-block; 
     padding: 8px;
     border-radius: 14px;
+    box-shadow: 2px 2px 20px 1px rgb(37, 101, 153);
 }
-
-.adr1 {font-size:26px;}
 
 #p {
     font-size: 14px;
     color: hsl(22, 100%, 40%)
 }
+
+
+.link-wrapper {
+    display: inline-block;
+    position: relative;
+    margin-top: 30px; /* Moves the whole group down from the top breaks */
+}
+
+/* 2. Update your button styles to sit on the top right corner */
+.button {
+    height: 10px;
+    width: 30px;
+    display: flex;
+    align-items: center;    
+    justify-content: center; 
+    padding: 10px 20px;  
+    background-color: rgb(112, 105, 92);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    position: absolute;
+    right: -50px;       /* Aligns perfectly with the right edge of the PENUMBRAL box */
+    top: -35px;       /* Sits perfectly right above the top edge of the PENUMBRAL box */
+}
+
+.button::after {
+    content: "Hide";
+    font-family: cursive;
+}
+
+#dig:checked ~ #topten {
+    display: none;
+    height: 0;
+}
+
+#dig:checked ~ .button::after {
+    content: "Show";
+}
+
+#dig:checked ~ .button {
+    background-color: #4b4b4b;
+    transform: translateY(60px);
+    position: absolute;
+    right: -220px;
+    top: -20px
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
