@@ -1,7 +1,7 @@
 body {
     color: white;
     background-color: rgb(201, 105, 15); 
-    background-image: url("demonlistbackground.jpg");
+    background-image: url("DemonlistBCKG.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -43,7 +43,7 @@ table, td {
     margin: auto;
     font-size: 30px;
     position: relative;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, filter 0.4s ease-in-out;
 }
 
 th{
@@ -64,29 +64,37 @@ th{
 td#one:hover, td#two:hover, td#three:hover, td#four:hover, td#five:hover, td#six:hover, td#seven:hover, td#eight:hover, td#nine:hover, td#ten:hover {
     transform: scale(1.1);
     z-index: 1;
+    filter: brightness(1.25);
 }
 
-/***Thinking Space II***/
+/***Society***/
 
 td#one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("society.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/***Think Space II***/
+
+td#two {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ts2.jpg");
     background-size: cover;
     background-position: center;
-    transition: transform 0.2s ease-in-out;
 }
 
 /***Flamewall***/
 
-td#two {
+td#three {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("flamewall.png");
     background-size: cover;
     background-position: center;
-    transition: transform 0.2s ease-in-out;
 }
 
 /***Amethyst***/
 
-td#three {
+td#four {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("amethyst.png");
     background-size: cover;
     background-position: center;
@@ -94,24 +102,24 @@ td#three {
 
 /***Tidal Wave***/
 
-td#four {
+td#five {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("tidalwave.png");
     background-size: cover;
     background-position: center;
 }
 
+
 /***ORBIT***/
 
-td#five {
+td#six {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("orbit.png");
     background-size: cover;
     background-position: center;
 }
 
-
 /***Nullscapes***/
 
-td#six {
+td#seven {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("nullscapes.png");
     background-size: cover;
     background-position: center;
@@ -119,15 +127,15 @@ td#six {
 
 /***Quanteuse Processing***/
 
-td#seven {
+td#eight {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Quanteuse.png");
     background-size: cover;
     background-position: center;
 }
 
-/***BOOBAWAMBA***/
+/***Boobawamba***/
 
-td#eight {
+td#nine {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("boobawamba.png");
     background-size: cover;
     background-position: center;
@@ -135,163 +143,157 @@ td#eight {
 
 /***Every End***/
 
-td#nine {
+td#ten {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("everyend.png");
     background-size: cover;
     background-position: center;
 }
-
-/***andromeda***/
-
-td#ten {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("penumbral.jpeg");
-    background-size: cover;
-    background-position: center;
-}
-
-
-
-
 
 
 
 
 /* text effects */
 
-/**universal transition**/
+/**universal transition and text deco**/
 
 a {
     transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+/***Society***/
+
+#new {
+    display: flex;
+    justify-content: right;
+    right: 200px;
+    font-size: small;
+}
+
+.word-container {
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+}
+
+span#ss {color: #ddbc68;}
+span#so {color: #da6965;}
+span#sc {color: #B32E2D;}
+span#si {color: #000000;}
+span#se {color: #BA810F;}
+span#st {color: #CA221F;}
+span#sy {color: #6e6e6e;}
+
+td#one:hover a#one span {
+    color: rgb(255, 135, 155);
 }
 
 /***Thinking space II***/
 
-a#one {
+a#two {
     color: white;
-    text-decoration: none;
     text-shadow: 3px 3px 3px black;
 }
 
-td#one:hover a#one {
+td#two:hover a#two {
     color: black;
     text-shadow: 3px 3px 3px white;
 }
 
 /***Flamewall***/
 
-a#two {
+a#three {
     color: rgb(0, 0, 0);
-    text-decoration: none;
     text-shadow: 3px 3px 3px #D83829;
 }
 
-td#two:hover a#two {
+td#three:hover a#three {
     color: #D83829;
     text-shadow: 3px 3px 3px black;
 }
 
 /***Amethyst***/
 
-a#three {
+a#four {
     color: rgb(255, 255, 255);
-    text-decoration: none;
     text-shadow: 3px 3px 3px #310A85;
 }
 
-td#three:hover a#three {
+td#four:hover a#four {
     color: #310A85;
     text-shadow: 3px 3px 3px white;
 }
 
 /***Tidal Wave***/
 
-a#four {
+a#five {
     color: rgb(255, 255, 255);
-    text-decoration: none;
     text-shadow: 3px 3px 3px rgb(0, 183, 255);
 }
 
-td#four:hover a#four {
+td#five:hover a#five {
     color:rgb(0, 183, 255);
     text-shadow: 3px 3px 3px rgb(255, 255, 255);
 }
 
 /***ORBIT***/
 
-a#five {
-    color: #88fff6;
-    text-decoration: none;
+a#six {
+    color: #88fff6; 
     text-shadow: 3px 3px 3px #62ff65;
 }
 
-td#five:hover a#five {
+td#six:hover a#six {
     color: #62ff65;
     text-shadow: 3px 3px 3px #88fff6;
 }
 
 /***Nullscapes***/
 
-a#six {
+a#seven {
     color: black;
-    text-decoration: none;
     text-shadow: 3px 3px 3px white;
 }
 
-td#six:hover a#six {
+td#seven:hover a#seven {
     color: white;
     text-shadow: 3px 3px 3px  black;
 }
 
 /***Quanteuse Processing***/
 
-a#seven {
+a#eight {
     color: white;
-    text-decoration: none;
     text-shadow: 3px 3px 3px #E5209E;
 }
 
-td#seven:hover a#seven {
+td#eight:hover a#eight {
     color: #E5209E;
     text-shadow: 3px 3px 3px white;
 }
 
 /***BOOBAWAMBA***/
 
-a#eight {
+a#nine {
     color: green;
-    text-decoration: none;
     text-shadow: 3px 3px 3px black;
 }
 
-td#eight:hover a#eight {
+td#nine:hover a#nine {
     color: black;
     text-shadow: 3px 3px 3px green;
 }
 
 /***Every End***/
 
-a#nine {
+a#ten {
     color: #027BF4;
-    text-decoration: none;
     text-shadow: 3px 3px 3px #2D2731;
 }
 
-td#nine:hover a#nine {
+td#ten:hover a#ten {
     color: #2D2731;
     text-shadow: 3px 3px 3px #027BF4;
-}
-
-/***Penumbral***/
-
-a#ten {
-    color: darkorange;
-    text-decoration: none;
-    text-shadow: 3px 3px 3px dimgray;
-}
-
-td#ten:hover a#ten {
-    color: dimgray;
-    text-shadow: 3px 3px 3px darkorange;
 }
 
 /*reserved custom id for orbit*/
@@ -304,12 +306,13 @@ span#t {color: #5BCD56;}
 
 .mobile-warning-overlay {
             position: fixed;
-            top: 0;
+            top: -40px;
             left: 0;
             width: 100vw;
-            height: 120vh;
-            background-color: #121212; /* Dark background */
-            color: #ffffff;            /* White text */
+            height: 100vh;
+            overflow: none;
+            background-color: #121212;
+            color: #ffffff;           
             
             /* Center the text perfectly */
             display: flex;
@@ -327,7 +330,7 @@ span#t {color: #5BCD56;}
             z-index: 9999; 
             
             /* Run the 'hideOverlay' animation for 4 seconds */
-            animation: hideOverlay 2s forwards;
+            animation: hideOverlay 1s forwards;
         }
 
         /* The 4-Second Animation */
@@ -336,7 +339,7 @@ span#t {color: #5BCD56;}
                 opacity: 1;
                 visibility: visible;
             }
-            90% {
+            70% {
                 opacity: 1; /* Keep it solid until near the end */
             }
             100% {
@@ -345,4 +348,4 @@ span#t {color: #5BCD56;}
             }
         }
 
-/*end*/
+
