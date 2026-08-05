@@ -11,6 +11,19 @@ body {
     cursor: default;
 }
 
+header h1 {
+    animation: rainbow 6s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { color: #ff3c3c; }
+    20% { color: #ffb300; }
+    40% { color: #00ff88; }
+    60% { color: #00d9ff; }
+    80% { color: #8b5cf6; }
+    100% { color: #ff3c3c; }
+}
+
 /*home button*/
 
 .home {
@@ -109,9 +122,17 @@ td#five {
 }
 
 
-/***ORBIT***/
+/***GREENBULLET***/
 
 td#six {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("GREENBULLET.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/***ORBIT***/
+
+td#seven {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("orbit.png");
     background-size: cover;
     background-position: center;
@@ -119,32 +140,24 @@ td#six {
 
 /***Nullscapes***/
 
-td#seven {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("nullscapes.png");
+td#eight {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("Nullscapes.png");
     background-size: cover;
     background-position: center;
 }
 
 /***Quanteuse Processing***/
 
-td#eight {
+td#nine {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Quanteuse.png");
     background-size: cover;
     background-position: center;
 }
 
-/***Boobawamba***/
-
-td#nine {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("boobawamba.png");
-    background-size: cover;
-    background-position: center;
-}
-
-/***Every End***/
+/***BOOBAWAMBA***/
 
 td#ten {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("everyend.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("boobawamba.png");
     background-size: cover;
     background-position: center;
 }
@@ -166,7 +179,9 @@ a {
 #new {
     display: flex;
     justify-content: right;
-    right: 200px;
+    position: relative;
+    top: -40px;
+    right: 10px;
     font-size: small;
 }
 
@@ -239,61 +254,62 @@ td#five:hover a#five {
 /***ORBIT***/
 
 a#six {
-    color: #88fff6; 
+    color: #62ff65; 
     text-shadow: 3px 3px 3px #62ff65;
 }
 
 td#six:hover a#six {
     color: #62ff65;
-    text-shadow: 3px 3px 3px #88fff6;
+    text-shadow: 3px 3px 3px #62ff65;
 }
 
 /***Nullscapes***/
 
 a#seven {
-    color: black;
-    text-shadow: 3px 3px 3px white;
+    color: #88fff6; 
+    text-shadow: 3px 3px 3px #62ff65;
 }
 
 td#seven:hover a#seven {
-    color: white;
-    text-shadow: 3px 3px 3px  black;
+    color: #62ff65;
+    text-shadow: 3px 3px 3px #88fff6;
 }
 
 /***Quanteuse Processing***/
 
 a#eight {
-    color: white;
-    text-shadow: 3px 3px 3px #E5209E;
+    color: black;
+    text-shadow: 3px 3px 3px white;
 }
 
 td#eight:hover a#eight {
-    color: #E5209E;
-    text-shadow: 3px 3px 3px white;
+    color: white;
+    text-shadow: 3px 3px 3px  black;
+    
 }
 
 /***BOOBAWAMBA***/
 
 a#nine {
-    color: green;
-    text-shadow: 3px 3px 3px black;
+    color: white;
+    text-shadow: 3px 3px 3px #E5209E;
 }
 
 td#nine:hover a#nine {
-    color: black;
-    text-shadow: 3px 3px 3px green;
+    color: #E5209E;
+    text-shadow: 3px 3px 3px white;
 }
 
 /***Every End***/
 
 a#ten {
-    color: #027BF4;
-    text-shadow: 3px 3px 3px #2D2731;
+    color: green;
+    text-shadow: 3px 3px 3px black;
 }
 
 td#ten:hover a#ten {
-    color: #2D2731;
-    text-shadow: 3px 3px 3px #027BF4;
+    color: black;
+    text-shadow: 3px 3px 3px green;
 }
 
 /*reserved custom id for orbit*/
